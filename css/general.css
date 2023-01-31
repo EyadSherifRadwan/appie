@@ -1,0 +1,284 @@
+/* 
+
+--- 01 TYPOGRAPHY SYSTEM
+
+- Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- Font weights:
+Default: 400
+Medium: 500
+Semi-bold: 600
+Bold: 700
+
+- Line heights
+Default: 1
+small: 1.05
+Medium: 1.2
+Paragraph default: 1.6
+
+- Letter spacing
+-0.5px
+0.75px
+
+--- 02 COLORS
+
+Primary: #ff3e66 #0e1133
+Tints: 
+#fdf2e9
+#fae5d3
+
+Shades:
+#cf711f
+#45260a
+Accents: 
+Greys
+
+#505056 *
+#6c6c72
+#767676 (lightest grey allowd on #fff)
+#6f6f6f (ligtest grey allowd on #fdf2e9)
+#555
+#333
+
+--- 05 SHADOWS
+
+box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+
+--- 06 BORDER-RADIUS
+
+Default: 30px
+Meduim: 11px
+
+--- 07 WHITESPACE
+
+- SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /* font-size: 10px*/
+  /* 10 px / 16px = 0.625 = 62.5%*/
+  /* Percentage of user's browser font-size setting  */
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #6c6c72;
+}
+
+img {
+}
+
+/**************************/
+/* GENRAL REUSABLE COMPONENTS */
+/**************************/
+
+.container {
+  /* 1140px */
+  max-width: 117rem;
+  margin-left: auto;
+  margin-right: auto;
+
+  /* width: 100%; */
+  /* display: flex; */
+  /* justify-content: center; */
+  /* justify-items: center; */
+}
+
+.grid {
+  display: grid;
+  /* column-gap: 6.4rem; */
+  /* row-gap: 9.6rem; */
+
+  /* margin-bottom: 9.6rem; */
+}
+
+/* .grid:last-child {
+  margin-bottom: 0;
+} */
+
+/* .grid:not(:last-child) {
+  margin-bottom: 9.6rem;
+} */
+
+.grid--2-cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--3-cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+/* .inline-block {
+  display: inline-block;
+} */
+
+.flex {
+  display: flex;
+  align-items: center;
+  /* transition: all 0.3s; */
+}
+
+.flex:hover {
+  /* gap: 0.5rem; */
+  /* transition: all 0.3s; */
+}
+
+.round-btn {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+
+  display: inline-block;
+  position: relative;
+}
+
+.round-btn ion-icon {
+  color: rgb(146, 146, 146);
+  width: 2.4rem;
+  height: 2.4rem;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.btn,
+.btn:link,
+.btn:visited {
+  display: inline-block;
+
+  text-decoration: none;
+  font-size: 1.4rem;
+  font-weight: 600;
+  padding: 1.8rem 3.4rem;
+  border-radius: 30px;
+  color: #0e1133;
+
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+
+  /* Put transition on original "state" */
+  /* transition: background-color 0.3s; */
+  /* transition: all 0.3s; */
+}
+
+.btn--outline:link,
+.btn--outline:visited {
+  box-shadow: inset 0 0 0 2px rgb(231, 234, 239);
+  transition: all 0.3s;
+}
+
+.btn--outline:hover,
+.btn--outline:active {
+  background-color: rgba(231, 234, 239);
+}
+
+.btn--full:link,
+.btn--full:visited {
+  background-color: #ff3e66;
+  color: #fff;
+  transition: all 0.3s;
+}
+
+.btn--full:hover,
+.btn--full:active {
+  background-color: #e6385c;
+}
+
+.link:link,
+.link:visited {
+  font-size: 1.4rem;
+  display: inline-block;
+  color: #505056;
+  text-decoration: none;
+  /* border-bottom: 1px solid currentColor; */
+  /* padding-bottom: 2px; */
+  transition: all 0.1s;
+}
+
+.link:hover,
+.link:active {
+  padding-right: 0.5rem;
+  /* color: #cf711f;
+  border-bottom: 1px solid transparent; */
+}
+
+.icon {
+  width: 2.4rem;
+  height: 2.4rem;
+}
+
+.icon-md {
+  width: 1.8rem;
+}
+
+.icon-sm {
+  width: 1rem;
+  height: 1rem;
+  display: block;
+}
+
+.main-heading {
+  color: #0e1133;
+  /* font-size: 3.4rem; */
+  font-size: 4.5rem;
+  font-weight: 800;
+  line-height: 1.2;
+  /* letter-spacing: -0.5px; */
+  margin-bottom: 2.4rem;
+}
+
+.main-heading-sm {
+  color: rgb(254, 77, 114);
+  margin-bottom: 2rem;
+  font-weight: 700;
+  font-size: 1.6rem;
+}
+
+.desc-heading {
+  color: #6c6c72;
+  font-size: 1.8rem;
+  line-height: 1.6;
+  font-weight: 500;
+}
+
+.heading {
+  color: #0e1133;
+  font-size: 4.4rem;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.secondary-heading {
+  color: rgb(14, 17, 51);
+  font-size: 2.8rem;
+  font-weight: 800;
+  margin-bottom: 1.6rem;
+}
+
+.justify-center {
+  display: flex;
+  justify-content: center;
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+span {
+  display: block;
+}
