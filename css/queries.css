@@ -65,7 +65,7 @@
   }
 
   .hero-img {
-    width: 40%;
+    max-width: 40%;
     margin-top: -2.5rem;
   }
 
@@ -171,7 +171,7 @@
 
   .hero-text-box {
     /* width: 45.8rem; */
-    width: 57.25rem;
+    max-width: 57.25rem;
     margin-left: 5.75rem;
   }
 
@@ -189,7 +189,7 @@
   }
 
   .hero-img {
-    width: 40%;
+    max-width: 40%;
     margin-top: -2.5rem;
   }
 
@@ -359,6 +359,10 @@
     font-size: 1.6rem;
   }
 
+  .desc-heading--download-app {
+    max-width: 100% !important;
+  }
+
   .social-numbers-cards {
     flex-direction: column;
     display: flex;
@@ -445,6 +449,11 @@
 
   .featured-in-logos-container--1 {
     gap: 3.2rem;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .featured-in-logos-container--2 {
+    grid-template-columns: repeat(2, 1fr);
   }
 
   /* ... */
@@ -486,3 +495,6 @@
     display: none;
   }
 }
+
+
+.
