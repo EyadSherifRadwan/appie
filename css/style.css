@@ -171,12 +171,13 @@
   background-color: #eef1f6;
   height: 100vh;
   margin-bottom: 9.6rem;
+  overflow: hidden;
 
   display: grid;
   grid-template-rows: auto 1fr;
 }
 
-main.hero {
+.hero {
   height: 100%;
   margin-top: auto;
 
@@ -187,22 +188,10 @@ main.hero {
 
 .hero-text-box {
   color: #0e1133;
-  width: 45.8rem;
+  max-width: 45.8rem;
   padding-bottom: 2rem;
   margin-left: 9rem;
-
-  /* align-self: start; */
-}
-
-.hero-img-box {
-  /* max-height: 55rem; */
-  max-width: 70rem;
-  align-self: end;
-  justify-self: end;
-}
-
-.hero-img {
-  width: 100%;
+  margin-right: 9rem;
 }
 
 .hero-heading {
@@ -223,6 +212,17 @@ main.hero {
 .hero-desctiption {
   font-size: 2rem;
   margin-bottom: 4.2rem;
+}
+
+.hero-img-box {
+  /* max-height: 55rem; */
+  max-width: 70rem;
+  align-self: end;
+  justify-self: end;
+}
+
+.hero-img {
+  width: 100%;
 }
 
 /* cta */
