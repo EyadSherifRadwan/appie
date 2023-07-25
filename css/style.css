@@ -3,7 +3,7 @@
 /**************************/
 
 .header {
-  padding: 3.2rem 10.8rem 3.2rem 9rem;
+  padding: 3.2rem 10.8rem 9rem 9rem;
 
   display: flex;
   align-items: center;
@@ -176,7 +176,8 @@
   grid-template-rows: auto 1fr;
 }
 
-.hero {
+main.hero {
+  height: 100%;
   margin-top: auto;
 
   display: grid;
@@ -185,14 +186,17 @@
 }
 
 .hero-text-box {
+  color: #0e1133;
   width: 45.8rem;
   padding-bottom: 2rem;
   margin-left: 9rem;
-  color: #0e1133;
+
+  /* align-self: start; */
 }
 
 .hero-img-box {
-  width: 80%;
+  /* max-height: 55rem; */
+  max-width: 70rem;
   align-self: end;
   justify-self: end;
 }
