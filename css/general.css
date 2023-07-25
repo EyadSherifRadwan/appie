@@ -87,13 +87,9 @@ img {
 .container {
   /* 1140px */
   max-width: 117rem;
+  /* width: 100%; */
   margin-left: auto;
   margin-right: auto;
-
-  /* width: 100%; */
-  /* display: flex; */
-  /* justify-content: center; */
-  /* justify-items: center; */
 }
 
 .grid {

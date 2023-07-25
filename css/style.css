@@ -2,14 +2,8 @@
 /* HEADER*/
 /**************************/
 
-.header-container {
-  background-color: #eef1f6;
-}
-
 .header {
-  /* padding: 3.2rem 8.6rem; */
-  /* padding: 0 auto; */
-  padding: 3.2rem 10.8rem 0 9rem;
+  padding: 3.2rem 10.8rem 3.2rem 9rem;
 
   display: flex;
   align-items: center;
@@ -173,40 +167,38 @@
 /* HERO SECTION */
 /**************************/
 
-main {
-}
-
 .section-hero {
   background-color: #eef1f6;
-  padding-top: 20rem;
+  height: 100vh;
   margin-bottom: 9.6rem;
+
+  display: grid;
+  grid-template-rows: auto 1fr;
 }
 
 .hero {
-  /* width: 117.5rem; */
-  /* column-gap: 1.2rem; */
-  /* margin-right: auto; */
-  /* margin-left: auto; */
+  margin-top: auto;
+
   display: grid;
   grid-template-columns: auto 1fr;
+  align-items: start;
 }
 
 .hero-text-box {
   width: 45.8rem;
-  margin-bottom: 16.8rem;
+  padding-bottom: 2rem;
   margin-left: 9rem;
   color: #0e1133;
 }
 
 .hero-img-box {
-  /* justify-self: end;
-  align-self: end; */
+  width: 80%;
+  align-self: end;
+  justify-self: end;
 }
 
 .hero-img {
   width: 100%;
-  justify-self: end;
-  align-self: end;
 }
 
 .hero-heading {

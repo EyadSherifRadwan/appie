@@ -114,7 +114,7 @@
   }
 
   .hero {
-    grid-template-columns: 1fr;
+    grid-template-columns: auto 1fr;
   }
 
   .features--1-cards-container {
@@ -165,7 +165,7 @@
   }
 
   .section-hero {
-    padding-top: 12.5rem;
+    /* padding-top: 12.5rem; */
     margin-bottom: 9.25rem;
   }
 
